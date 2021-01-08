@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name = ""
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form {
+            TextField("Enter your name", text: $name)
+            Text("Hello World")
+            //How to accese the property inline
+            Text("Your name is \(name)")
+        }
     }
 }
 

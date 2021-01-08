@@ -11,6 +11,7 @@
 		2B0D955B25A8CA56001F867A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D955A25A8CA56001F867A /* ContentView.swift */; };
 		2B0D955D25A8CA57001F867A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D955C25A8CA57001F867A /* Assets.xcassets */; };
 		2B0D956025A8CA57001F867A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D955F25A8CA57001F867A /* Preview Assets.xcassets */; };
+		2BBD2E7225A8CF5C004EAB18 /* CreateViewInLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD2E7125A8CF5C004EAB18 /* CreateViewInLoop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2B0D955C25A8CA57001F867A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0D955F25A8CA57001F867A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B0D956125A8CA57001F867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BBD2E7125A8CF5C004EAB18 /* CreateViewInLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewInLoop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		2B0D954C25A8CA56001F867A = {
 			isa = PBXGroup;
 			children = (
+				2BBD2E7025A8CF32004EAB18 /* Learning */,
 				2B0D955725A8CA56001F867A /* SpiltUpProject */,
 				2B0D955625A8CA56001F867A /* Products */,
 			);
@@ -54,6 +57,7 @@
 			children = (
 				2B0D955825A8CA56001F867A /* SpiltUpProjectApp.swift */,
 				2B0D955A25A8CA56001F867A /* ContentView.swift */,
+				2BBD2E7125A8CF5C004EAB18 /* CreateViewInLoop.swift */,
 				2B0D955C25A8CA57001F867A /* Assets.xcassets */,
 				2B0D956125A8CA57001F867A /* Info.plist */,
 				2B0D955E25A8CA57001F867A /* Preview Content */,
@@ -67,6 +71,13 @@
 				2B0D955F25A8CA57001F867A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BBD2E7025A8CF32004EAB18 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Learning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				2B0D955B25A8CA56001F867A /* ContentView.swift in Sources */,
 				2B0D955925A8CA56001F867A /* SpiltUpProjectApp.swift in Sources */,
+				2BBD2E7225A8CF5C004EAB18 /* CreateViewInLoop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
