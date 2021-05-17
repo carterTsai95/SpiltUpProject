@@ -31,6 +31,7 @@ struct ContentView: View {
         
         let tipSelection = Double(tipPercentages[tipPercentage])
                 
+        //The nil coalescing operator is used to ensure something does have a value, either by unwrapping its optional value or by providing a default.
         let orderAmount = Double(checkAmount) ?? 0
         
         let tipValue = orderAmount / 100 * tipSelection
@@ -51,6 +52,9 @@ struct ContentView: View {
                     TextField("Amount", text: $checkAmount)
                         .keyboardType(.decimalPad)
                 }
+                
+                
+                //Did you notice that $0 in there? That’s shorthand syntax for closure parameters, because we’re inside a closure. That’s the same reason we need the self in self.tipPercentages – we’re using closures extensively, even though you might not have noticed.
                 
                 Picker("Number of people", selection: $numberOfPeople) {
                     ForEach(2 ..< 100) {
@@ -76,6 +80,15 @@ struct ContentView: View {
 
     }
 }
+
+//Challenge
+/*
+
+1. Add a header to the third section, saying “Amount per person”
+2. Add another section showing the total amount for the check – i.e., the original amount plus tip value, without dividing by the number of people.
+3. Change the “Number of people” picker to be a text field, making sure to use the correct keyboard type.
+
+ */
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
